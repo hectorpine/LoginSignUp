@@ -4,6 +4,8 @@ frontend:
     preBuild:
       commands:
         - npm install
+        - npm install -g typescript
+     
     build:
       commands:
         - npm run build
