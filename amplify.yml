@@ -6,7 +6,8 @@ frontend:
         - npm install
     build:
       commands:
-        - npm run all
+        - npm run serve
+        - npm run build
   artifacts:
     baseDirectory: build
     files:
