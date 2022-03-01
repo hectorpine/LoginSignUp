@@ -1,0 +1,37 @@
+2022-02-25T03:07:26.078Z [INFO]: Git SSH Key acquired
+2022-02-25T03:07:26.149Z [INFO]: # Cloning repository: git@github.com:hectorpine/shoppingexperience.git
+2022-02-25T03:07:26.415Z [INFO]: Agent pid 131
+2022-02-25T03:07:26.445Z [INFO]: Identity added: /root/.ssh/git_rsa (/root/.ssh/git_rsa)
+2022-02-25T03:07:26.779Z [INFO]: Cloning into 'shoppingexperience'...
+2022-02-25T03:07:27.157Z [INFO]: Warning: Permanently added the ECDSA host key for IP address '140.82.114.4' to the list of known hosts.
+2022-02-25T03:07:27.650Z [INFO]: # Checking for Git submodules at: /codebuild/output/src239027049/src/shoppingexperience/.gitmodules
+2022-02-25T03:07:27.670Z [INFO]: # Retrieving environment cache...
+2022-02-25T03:07:27.705Z [INFO]: # Retrieved environment cache
+2022-02-25T03:07:27.705Z [INFO]: ---- Setting Up SSM Secrets ----
+2022-02-25T03:07:27.706Z [INFO]: SSM params {"Path":"/amplify/dcdpharuf7llx/master/","WithDecryption":true}
+2022-02-25T03:07:27.741Z [WARNING]: !Failed to set up process.env.secrets
+2022-02-25T03:07:27.741Z [INFO]: No live updates for this build run
+2022-02-25T03:07:27.747Z [INFO]: # Retrieving cache...
+2022-02-25T03:07:27.788Z [INFO]: # Extracting cache...
+2022-02-25T03:07:27.795Z [INFO]: # Extraction completed
+2022-02-25T03:07:59.083Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+                                 ## Completed Backend Build
+                                 ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Completed phase: build
+                                 ## Completed Frontend Build
+2022-02-25T03:07:59.086Z [INFO]: ## Build completed successfully
+2022-02-25T03:07:59.087Z [INFO]: # Starting caching...
+2022-02-25T03:07:59.170Z [INFO]: # Creating cache artifact...
+2022-02-25T03:07:59.222Z [INFO]: # Cache artifact is: 0MB
+2022-02-25T03:07:59.222Z [INFO]: # Uploading cache artifact...
+2022-02-25T03:07:59.428Z [INFO]: # Caching completed
+2022-02-25T03:07:59.431Z [INFO]: No custom headers found.
+2022-02-25T03:07:59.433Z [ERROR]: !!! CustomerError: Artifact directory doesn't exist: build
+2022-02-25T03:07:59.433Z [INFO]: # Starting environment caching...
+2022-02-25T03:07:59.434Z [INFO]: # Environment caching completed
+Terminating logging...
