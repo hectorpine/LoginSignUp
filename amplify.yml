@@ -4,6 +4,7 @@ frontend:
     preBuild:
       commands:
         - npm install
+        - npm run serve
     build:
       commands:
         - npm run build
