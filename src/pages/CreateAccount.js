@@ -26,7 +26,7 @@ const CreateAccount = () => {
 
     const addUser = () => {
         // console.log(name)
-        Axios.post('http://localhost:3001/create',
+        Axios.post('https://sql-connect.herokuapp.com/create',
             { firstName: firstName, lastName: lastName, email:email, phone:phone,password:password }
         ).then(() => {
             console.log("success");
