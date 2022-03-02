@@ -21,7 +21,7 @@ const SignIn = () => {
 
     const addEmployee = () => {
         // console.log(name)
-        Axios.post('http://localhost:3001/login',
+        Axios.post('aws-sql.crrtsanmfwdi.us-east-1.rds.amazonaws.com/login',
             { email:email, password:password}
         ).then((response) => {
            // console.log(response.data);
