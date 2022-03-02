@@ -21,7 +21,7 @@ const SignIn = () => {
 
     const addEmployee = () => {
         // console.log(name)
-        Axios.post('aws-sql.crrtsanmfwdi.us-east-1.rds.amazonaws.com/login',
+        Axios.post('https://sql-connect.herokuapp.com/login',
             { email:email, password:password}
         ).then((response) => {
            // console.log(response.data);
