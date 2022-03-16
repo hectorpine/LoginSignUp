@@ -102,7 +102,7 @@ const Header = () => {
                                     <label> Email:</label>
                                     <input type="text" onChange={(event) => { setEmail(event.target.value); }}/>
                                     <label> Password:</label>
-                                    <input type="text" onChange={(event) => { setPassword(event.target.value); }}/>
+                                    <input type="password" onChange={(event) => { setPassword(event.target.value); }}/>
                                     <button onClick={logIn}>Sign In</button>
                                     <button className="createAccountBtn" onClick={closeSignIn}>Create Account</button>
                                 </div>
@@ -127,7 +127,7 @@ const Header = () => {
                                     <label>Email Address:</label>
                                     <input type="text" onChange={(event) => { setEmail(event.target.value); }} />
                                     <label>Password:</label>
-                                    <input type="text" onChange={(event) => { setPassword(event.target.value); }} />
+                                    <input type="password" onChange={(event) => { setPassword(event.target.value); }} />
 
                                     
 
