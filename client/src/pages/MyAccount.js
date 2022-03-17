@@ -1,11 +1,26 @@
 import React from "react";
-
+import './MyAccount.css';
 
 
 const MyAccount = () =>{
     return <div> 
-        <p>My Account Info
-        </p>
+        
+        <div className="accountInfo">
+            <label>First Name:</label>
+            <input type="text" />
+            <label>Last Name:</label>
+            <input type="text" />
+            <label>Phone Number:</label>
+            <input type="number" />
+            <label>Email:</label>
+            <input type="text" />
+            <label>Password:</label>
+            <input type="password" />
+            <label>Confirm Password:</label>
+            <input type="password" />
+            <button className="saveBtn">Save Changes</button>
+        </div>
+
 
     </div>
    

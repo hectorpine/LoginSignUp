@@ -21,8 +21,8 @@ export default function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
           <Route path="/myaccount" element={<MyAccountNav />}>
-            <Route path="myorders" element={<MyOrders />} />
             <Route index element={<MyAccount />} />
+            <Route path="myorders" element={<MyOrders />} />
           </Route>
         </Route>
         <Route path="/admin" element={<AdminView />} >

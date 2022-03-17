@@ -1,14 +1,26 @@
 import React from "react";
+import './MyAccountNav.css';
 import { Outlet, Link } from 'react-router-dom';
 
 
 const MyAccountNav = () =>{
     return <div> 
-        <p>My Account Tabs
-        </p>
-        <Link to="/MyAccount">My Account Information</Link> <br/>
-        <Link to="MyOrders">My Orders</Link>
+        <div className="accNav">
 
+            <div className="vl2"></div>
+
+            <div id="accLinks">
+                <Link to="/MyAccount">
+                    <button class="myAccBtn accInfoBtn">Account Information</button>
+                </Link> <br/>
+                <div className="l2"></div>
+                <Link to="MyOrders">
+                    <button class="myAccBtn">My Orders</button>
+                </Link> <br/>
+                <div className="l2"></div>
+            </div>
+            
+        </div>
         <Outlet />
     </div>
    
