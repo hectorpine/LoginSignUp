@@ -1,0 +1,97 @@
+h3{
+    margin: 195px 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: #202020;
+    position: fixed;
+}
+.itemLabels{
+    position: fixed;
+    margin: 250px 110px;
+}
+.itemLabels label{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
+    font-weight: bold;
+    padding-right: 115px;
+}
+.line1{
+    height: 1px;
+    width: 800px;
+    background-color: #202020;
+    margin: 275px 70px;
+    position: fixed;
+}
+/*
+.sample{
+    border: 1px solid #202020;
+    width: 800px;
+    height: 1100px;
+    margin: 300px 70px;
+    position: absolute;
+}
+*/
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    margin: 250px 970px;
+    position: fixed;
+}
+.discount input{
+    width: 250px;
+    height: 20px;
+    border: 1px solid grey;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
+    padding-left: 3px;
+    font-size: 16px;
+}
+.discount label{
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
+}
+.discount button.applyBtn{
+    height: 35px;
+    width: 120px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: #19394A;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 70px;
+    cursor: pointer;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    margin: 480px 970px;
+    position: fixed;
+}
+.price label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
+    padding-bottom: 10px;
+}
+.price button.checkoutBtn{
+    height: 35px;
+    width: 120px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    background-color: #19394A;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px 70px;
+    cursor: pointer;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import './MyAccountNav.css';
+import './css/MyAccountNav.css';
 import { Outlet, Link } from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ const MyAccountNav = () =>{
 
             <div id="accLinks">
                 <Link to="/MyAccount">
-                    <button class="myAccBtn accInfoBtn">Account Information</button>
+                    <button class="myAccBtn accInfoBtn">My Account</button>
                 </Link> <br/>
                 <div className="l2"></div>
                 <Link to="MyOrders">
@@ -23,7 +23,6 @@ const MyAccountNav = () =>{
         </div>
         <Outlet />
     </div>
-   
 }
 
 export default MyAccountNav;

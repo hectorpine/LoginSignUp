@@ -1,14 +1,16 @@
 h2 {
     font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
     position: absolute;
     margin-top: 20px;
     margin-left: 50px;
 }
 
-.header button.signoutBtn {
+.header2 button.signoutBtn {
     height: 40px;
     width: 125px;
-  /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     border: none;
     color: white;
@@ -44,7 +46,9 @@ h2 {
 #sidebarLinks button{
     border: none;
     background-color: transparent;
-    font-size: 15px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
     padding: 15px;
     margin-left: 15px;
     cursor: pointer;

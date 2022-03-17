@@ -1,7 +1,8 @@
+ 
  .newBook{
     width: 1150px;
     height: 650px;
-    margin-top: -360px;
+    margin-top: -320px;
     margin-left: 210px;
  }
 
@@ -47,6 +48,8 @@
     width: 130px;
     text-align: center;
     line-height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
     color: white;
     background-color: #19394A;
     border-radius: 10px;
@@ -65,24 +68,33 @@
 .bookInfo input {
     width: 600px;
     height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
     font-size: medium;
+    padding-left: 3px;
     border: .8px solid black;
 }
 
 .bookInfo label{
     padding-top: 25px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
 }
 
 .bookInfo textarea{
     width:600px;
     font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202020;
+    padding-left: 3px;
 }
 
 .bookInfo button.addBookBtn {
     height: 40px;
     width: 155px;
-  /*font-family: 'Times New Roman', Times, serif;*/
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     border: none;
     color: white;

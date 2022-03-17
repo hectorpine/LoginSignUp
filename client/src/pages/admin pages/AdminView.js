@@ -20,7 +20,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 */
     return <div> 
-        <div className="header"> 
+        <div className="header2"> 
             <h2>Admin View</h2>
             <button className="signoutBtn" onClick={signOut}>Sign Out</button>
             <div className="hl"></div>
@@ -41,12 +41,8 @@ for (var i = 0; i < btns.length; i++) {
                     <button class="adminBtn">Order History</button>
                 </Link> <br/>
                 <div className="l1"></div>
-                <Link to="discountcodes">
-                    <button class="adminBtn">Discount Codes</button>
-                </Link> <br/>
-                <div className="l1"></div>
                 <Link to="sales">
-                    <button class="adminBtn">Sales</button>
+                    <button class="adminBtn">Codes / Sales</button>
                 </Link> <br/>
                 <div className="l1"></div>
                 <Link to="users">

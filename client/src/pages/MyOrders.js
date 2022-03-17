@@ -4,8 +4,7 @@ import React from "react";
 
 const MyOrders = () =>{
     return <div> 
-        <p>My Order History 
-        </p>
+        <label>My Orders</label>
 
     </div>
    

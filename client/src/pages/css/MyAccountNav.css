@@ -1,25 +1,28 @@
 .accNav {
     margin: 150px 0;
+    position: fixed;
 }
 
 .vl2 {
     height: 450px;
     width: 1px;
     position: absolute;
-    margin: 50px 200px;
+    margin: 70px 200px;
     background-color: grey;
   }
 
   #accLinks button.accInfoBtn{
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 #accLinks button{
     border: none;
     background-color: transparent;
-    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
     padding: 15px;
     margin-left: 15px;
+    color: #202020;
     cursor: pointer;
 }
 

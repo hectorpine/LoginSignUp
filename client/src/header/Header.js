@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css';
 import { useState } from "react";
 import Axios from 'axios';
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -138,9 +138,11 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="shopingCart">
-                    <button>
-                        <span class="material-icons">shopping_cart</span>
-                    </button>
+                    <Link to="/cart">
+                        <button>
+                            <span class="material-icons">shopping_cart</span>
+                        </button>
+                        </Link> <br/>
                 </div>
                 <h1>Bookstore Name</h1>
                 <div className="search"> 

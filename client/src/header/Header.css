@@ -1,21 +1,36 @@
+.header{
+  position: fixed;
+}
 .banner {
     height: 50px;
-    width: 100%;
-    background-color: #19424A;
+    width: 1367px;
+    
+    background-color: #19394A;
+    position: fixed;
   }
 
   h1 {
     font-size: 35px;
-    position: absolute;
-    margin: 40px 15px;
+    position: fixed;
+    font-family:'Times New Roman', Times, serif;
+    color: #202020;
+    margin: 75px 15px;
   }
 
   .search input {
     border: 1px outset black;
     width: 650px;
     height: 30px;
-    position: absolute;
-    margin: 60px 350px;
+    position: fixed;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    padding-inline-start: 5px;
+    margin: 80px 320px;
+  
+  }
+  ::placeholder{
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
   }
 
   .searchButton button{
@@ -23,8 +38,8 @@
     border: 1px outset black;
     width: 40px;
     height: 34px;
-    position: absolute;
-    margin: 60px 1004px;
+    position: fixed;
+    margin: 80px 977px;
     cursor:pointer;
   }
 
@@ -33,8 +48,8 @@
     border: none;
     width: 40px;
     height: 30px;
-    position: absolute;
-    margin: 60px 1080px;
+    position: fixed;
+    margin: 100px 1050px;
     cursor:pointer;
   }
 
@@ -43,49 +58,52 @@
     position: absolute;
     display: inline-block;
     padding: 2px;
-    height:30px;
-    width:125px;
-    margin: 4px 1066px;
+    height: 30px;
+    width: 125px;
+    margin: 50px 1066px;
   }
 
   .accountIcon{
-      position: absolute;
-      margin: 10px 1050px;
+      position: fixed;
+      margin: 56px 1048px;
   }
   .expandIcon{
-    position: absolute;
-    margin: 10px 1180px;
+    position: fixed;
+    margin: 56px 1178px;
   }
 
   .dropbtn {
     background-color: transparent;
-    color: #3E3E3E;
+    font-family:'Times New Roman', Times, serif;
+    color: #202020;
     font-size: 20px;
     border: none;
     cursor: pointer;
   }
 
-  
+
   .dropdown-content {
-    border: 2px outset black;
+    border: 1px solid black;
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 160px;
+    background-color:  white;
+    margin-left: -19px;
+    min-width: 150px;
     min-height: 100px;
     z-index: 1;
   }
   
   .signIn button.signInBtn {
-      height: 50px;
-      width: 135px;
-      font-size: 20px;
+      height: 40px;
+      width: 120px;
+      font-size: 22px;
       border: none;
       color: white;
       background-color: #19394A;
+      font-family:'Times New Roman', Times, serif;
       border-radius: 10px;
       position: relative;
-      margin-left: 12px;
+      margin-left: 15px;
       margin-top: 15px;
       cursor: pointer;
   }
@@ -93,9 +111,11 @@
   .createAccount button.createAccountBtn {
     border: none;
     font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    color: #202020;
     background-color: transparent;
     position: relative;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 15px;
     text-decoration: underline;
     cursor: pointer;
@@ -110,15 +130,16 @@
   }
 
   hr {
-    width: 100%;
+    width: 1367px;
     height: 1px;
     border:  none;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 150px;
-    margin-bottom:90px;
-    position: absolute;
+    margin-top: 180px;
+    margin-bottom:100px;
+    position: fixed;
     background-color: grey;
+    z-index: -1;
  }
 
 

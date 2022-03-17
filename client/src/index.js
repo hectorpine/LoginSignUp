@@ -10,9 +10,9 @@ import AdminView from "./pages/admin pages/AdminView";
 import AddNewBook from "./pages/admin pages/AddNewBook";
 import ViewInventory from "./pages/admin pages/ViewInventory";
 import OrderHistory from "./pages/admin pages/OrderHistory";
-import DiscountCodes from "./pages/admin pages/DiscountCodes";
 import Sales from "./pages/admin pages/Sales";
 import ViewUsers from "./pages/admin pages/ViewUsers";
+import Cart from "./pages/Cart";
 
 export default function App() {
   return (
@@ -20,6 +20,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
+          <Route path="cart" element={<Cart/>} />
           <Route path="/myaccount" element={<MyAccountNav />}>
             <Route index element={<MyAccount />} />
             <Route path="myorders" element={<MyOrders />} />
@@ -29,7 +30,6 @@ export default function App() {
           <Route index element={<AddNewBook />} />
           <Route path="viewinventory" element={<ViewInventory />} />
           <Route path="orderhistory" element={<OrderHistory />} />
-          <Route path="discountcodes" element={<DiscountCodes />} />
           <Route path="sales" element={<Sales />} />
           <Route path="users" element={<ViewUsers />} />
         </Route>
