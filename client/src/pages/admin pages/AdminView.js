@@ -1,5 +1,5 @@
 import React from "react";
-import './css style sheets/AdminView.css';
+import './css/AdminView.css';
 import { Outlet, Link } from 'react-router-dom';
 
 

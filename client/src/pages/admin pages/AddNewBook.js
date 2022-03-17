@@ -1,16 +1,32 @@
 import React from "react";
-import './css style sheets/AddNewBook.css';
+import './css/AddNewBook.css';
 
 
 const AddNewBook = () =>{
+
+    function showPreview(event){
+        if(event.target.files.length > 0){
+          var src = URL.createObjectURL(event.target.files[0]);
+          var preview = document.getElementById("bookCoverPreview");
+          preview.src = src;
+          preview.style.display = "block";
+        }
+      }
+
     
     return <div> 
         <div className="newBook">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
             <div className="bookImg">
                 <div className="coverDisplay">
-                <span class="material-icons addPhoto">photo_library</span>
+                    <div class="image">
+                        <img id="bookCoverPreview" alt=""/>
+                    </div>
+                    <span class="material-icons addPhoto">photo_library</span>
                 </div>
+                <label for="imgBtn">Upload Image</label>
+                <input type="file" id="imgBtn" accept="image/*" onChange={showPreview} />
             </div>
 
             <div className="bookInfo">
@@ -21,11 +37,11 @@ const AddNewBook = () =>{
                 <label>Description</label>
                 <textarea rows="7" />
                 <label>ISBN</label>
-                <input type="text" />
+                <input type="number" />
                 <label>Price ($)</label>
-                <input type="text" />
+                <input type="number" />
                 <label>Qty.</label>
-                <input type="text" />
+                <input type="number" />
                 <button className="addBookBtn">Add New Book</button>
             </div>
         </div>
