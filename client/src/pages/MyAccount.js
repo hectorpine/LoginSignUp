@@ -1,5 +1,6 @@
 import React from "react";
 import './css/MyAccount.css';
+import './font.css';
 
 
 const MyAccount = () =>{

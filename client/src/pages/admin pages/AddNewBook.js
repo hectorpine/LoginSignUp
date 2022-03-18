@@ -1,5 +1,6 @@
 import React from "react";
 import './css/AddNewBook.css';
+import '../font.css';
 
 
 const AddNewBook = () =>{

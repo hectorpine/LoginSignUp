@@ -1,5 +1,6 @@
 import React from "react";
 import './css/Cart.css';
+import './font.css';
 
 const Cart = () =>{
     

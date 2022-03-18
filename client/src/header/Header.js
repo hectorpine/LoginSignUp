@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css';
+import '../pages/font.css'
 import { useState } from "react";
 import Axios from 'axios';
 import { Outlet, Link } from "react-router-dom";
@@ -41,7 +42,7 @@ const Header = () => {
     // open create account popup form
     const createForm = () => {
         var createModal = document.getElementById("createAccountModal");
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("close2")[0];
         createModal.style.display = "block";
         span.onclick = function() {
             createModal.style.display = "none";
@@ -95,43 +96,51 @@ const Header = () => {
                     <div class="dropdown-content">
                         <div className="signIn">
                             <button className="signInBtn" onClick={signInForm}>Sign In</button>
+
+
                             <div id="signInModal" class="modal">
                                 <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <label>{loginStatus}</label>                                 
-                                    <label> Email:</label>
-                                    <input type="text" onChange={(event) => { setEmail(event.target.value); }}/>
-                                    <label> Password:</label>
-                                    <input type="password" onChange={(event) => { setPassword(event.target.value); }}/>
-                                    <button onClick={logIn}>Sign In</button>
-                                    <button className="createAccountBtn" onClick={closeSignIn}>Create Account</button>
+                                    <span class="close">&times;</span>            
+                                    <label>{loginStatus}</label>
+                                    <label className="sign-in-label">Sign In</label>
+                                    <input type="text" className = "sign-in-email" placeholder = "Email" onChange={(event) => { setEmail(event.target.value); }}/>
+                                    <input type="password" className = "sign-in-passwrd" placeholder = "Password" onChange={(event) => { setPassword(event.target.value); }}/>
+                                    <button className="sign-in-btn" onClick={logIn}>Sign In</button>
+                                    <button className="create-acc-btn" onClick={closeSignIn}>Create Account</button>
                                 </div>
                             </div>
+
+
                         </div>
                         <div className="createAccount">
                             <button id="myBtn" className="createAccountBtn" onClick={createForm}>Create Account</button>
+
+
                             <div id="createAccountModal" class="modal">
                                 <div class="modal-content">
-                                    <span class="close">&times;</span>
+                                    
+                                    <span class="close2">&times;</span>
+
                                     <div className="createMssg">
-                                        <label>Create Account </label>
-                                        <label>If you already have an account </label>
+                                        <label className="cMssg1">Create Account </label> <br/>
+                                        <label className="cMssg2">If you already have an account </label>
                                         <button className="signInBtn" onClick={closeCreateAccount}>Sign In</button>
                                     </div>
-                                    <label> First Name:</label>
-                                    <input type="text" onChange={(event) => { setFirstName(event.target.value); }} />
-                                    <label> Last Name:</label>
-                                    <input type="text" onChange={(event) => { setLastName(event.target.value); }} />
-                                    <label>Phone Number:</label>
-                                    <input type="text" onChange={(event) => { setPhone(event.target.value); }} />
-                                    <label>Email Address:</label>
-                                    <input type="text" onChange={(event) => { setEmail(event.target.value); }} />
-                                    <label>Password:</label>
-                                    <input type="password" onChange={(event) => { setPassword(event.target.value); }} />
+                                   
+                                    <input type="text" className="create-fname" placeholder = "First Name" onChange={(event) => { setFirstName(event.target.value); }} />
+                                    
+                                    <input type="text" className="create-lname" placeholder = "Last Name" onChange={(event) => { setLastName(event.target.value); }} />
+                                    
+                                    <input type="text" className="create-phone" placeholder = "Phone Number" onChange={(event) => { setPhone(event.target.value); }} />
+                                   
+                                    <input type="text" className="create-email" placeholder = "Email" onChange={(event) => { setEmail(event.target.value); }} />
+                               
+                                    <input type="password" className="create-passwd" placeholder = "Password" onChange={(event) => { setPassword(event.target.value); }} />
 
                                     
 
                                     <button className="createAccBtn" onClick={addUser}>Create Account</button>
+
                                 </div>
                             </div>
                         </div>

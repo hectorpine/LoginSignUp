@@ -1,17 +1,17 @@
 h3{
     margin: 195px 45px;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 35px;
     color: #202020;
     position: fixed;
+    z-index: -1;
 }
 .itemLabels{
     position: fixed;
     margin: 250px 110px;
+    z-index: -1;
 }
 .itemLabels label{
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
     color: #202020;
     font-weight: bold;
     padding-right: 115px;
@@ -22,6 +22,7 @@ h3{
     background-color: #202020;
     margin: 275px 70px;
     position: fixed;
+    z-index: -1;
 }
 /*
 .sample{
@@ -38,12 +39,12 @@ h3{
     flex-direction: column;
     margin: 250px 970px;
     position: fixed;
+    z-index: -1;
 }
 .discount input{
     width: 250px;
     height: 20px;
     border: 1px solid grey;
-    font-family: 'Times New Roman', Times, serif;
     color: #202020;
     padding-left: 3px;
     font-size: 16px;
@@ -52,7 +53,6 @@ h3{
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
     color: #202020;
 }
 .discount button.applyBtn{
@@ -62,7 +62,6 @@ h3{
     border: none;
     color: white;
     background-color: #19394A;
-    font-family: 'Times New Roman', Times, serif;
     border-radius: 10px;
     position: relative;
     margin: 10px 70px;
@@ -74,11 +73,11 @@ h3{
     flex-direction: column;
     margin: 480px 970px;
     position: fixed;
+    z-index: -1;
 }
 .price label{
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
     color: #202020;
     padding-bottom: 10px;
 }
@@ -86,7 +85,6 @@ h3{
     height: 35px;
     width: 120px;
     font-size: 19px;
-    font-family: 'Times New Roman', Times, serif;
     border: none;
     color: white;
     background-color: #19394A;

@@ -1,5 +1,6 @@
 import React from "react";
 import './css/MyAccountNav.css';
+import './font.css';
 import { Outlet, Link } from 'react-router-dom';
 
 

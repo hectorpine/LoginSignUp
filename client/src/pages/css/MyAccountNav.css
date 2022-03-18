@@ -1,6 +1,7 @@
 .accNav {
     margin: 150px 0;
     position: fixed;
+    z-index: -1;
 }
 
 .vl2 {
@@ -18,7 +19,6 @@
 #accLinks button{
     border: none;
     background-color: transparent;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 19px;
     padding: 15px;
     margin-left: 15px;
